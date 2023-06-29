@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .fx {
+      display: flex;
+    }
+
+    .fx-column {
+      flex-direction: column;
+    }
+
+    .gap-1 {
+      gap: 1rem;
+    }
+  </style>
+</head>
+
+<body class="fx fx-column gap-1">
+  <form class="fx fx-column gap-1">
+    <input type="file" name="fileInput">
+
+    <textarea name="textInput" rows="10" placeholder="Text field..." style="resize: none;"></textarea>
+
+    <button type="submit">Submit</button>
+
+    <button type="reset">Reset</button>
+  </form>
+
+  <!-- integrate axios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+    integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="api.js"></script>
+</body>
+
+</html>
